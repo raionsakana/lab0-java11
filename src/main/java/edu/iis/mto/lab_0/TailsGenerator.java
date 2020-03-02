@@ -8,9 +8,10 @@ public class TailsGenerator {
     public List<String> tails(String value) {
 
         ArrayList<String> list = new ArrayList<String>();
+        int SIZE = value.length();
 
-        for (int i = 0; i < value.length() + 1; i++) {
-            list.add(value);
+        for (int i = 0; i < SIZE + 1; i++) {
+            list.add(value.substring(i, SIZE));
         }
 
         return list;
